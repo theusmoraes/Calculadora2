@@ -24,7 +24,7 @@ public class Calculadora2 {
                 case "-":
                 break;
                 case "*":
-                    System.out.println(x + " " + oper + " " + y + " = " + mult.mult(Integer.parseInt(x), Integer.parseInt(y)));
+                   System.out.println(x + " " + oper + " " + y + " = " + mult.mult(Double.parseDouble(x) , Double.parseDouble(y)));
                 break;
                 case "/":
                 break;

@@ -10,7 +10,7 @@ package calculadora2;
  * @author aluno
  */
 public class Multiplicacao {
-    public int mult(int a, int b){
+    public double mult(double a, double b){
         return a * b;
     }
     
