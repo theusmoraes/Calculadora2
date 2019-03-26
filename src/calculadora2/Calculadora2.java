@@ -27,7 +27,11 @@ public class Calculadora2 {
                 case "-":
                 break;
                 case "*":
+<<<<<<< HEAD
                     System.out.println(x + " " + oper + " " + y + " = " + mult.mult(Double.parseDouble(x), Integer.parseInt(y)));
+=======
+                   System.out.println(x + " " + oper + " " + y + " = " + mult.mult(Double.parseDouble(x) , Double.parseDouble(y)));
+>>>>>>> daefedb0b64315cc847be370bd71642b9979ac04
                 break;
                 case "/":
                     System.out.println(x + " " + oper + " " + y + " = " + div.div(Double.parseDouble(x), Double.parseDouble(y)));
