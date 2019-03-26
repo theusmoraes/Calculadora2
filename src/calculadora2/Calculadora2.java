@@ -4,6 +4,7 @@ public class Calculadora2 {
     public static void main(String[] args){
         Soma soma = new Soma();
         Scanner input = new Scanner(System.in);
+        Multiplicacao mult = new Multiplicacao();
         String x, y;
         String oper;
         System.out.println("10 + 5 Enter!    Insira 0 a qualquer momento para sair");
@@ -26,6 +27,7 @@ public class Calculadora2 {
                 case "-":
                 break;
                 case "*":
+                    System.out.println(x + " " + oper + " " + y + " = " + mult.mult(Integer.parseInt(x), Integer.parseInt(y)));
                 break;
                 case "/":
                 break;
