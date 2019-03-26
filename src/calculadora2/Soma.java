@@ -3,7 +3,7 @@ package calculadora2;
 
 public class Soma {
     
-    public int soma(int a, int b){
+    public double soma(double a, double b){
         return a + b;
     }
 }

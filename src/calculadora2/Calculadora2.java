@@ -21,13 +21,13 @@ public class Calculadora2 {
             }
             switch (oper){
                 case "+":
-                    System.out.println(x + " " + oper + " " + y + " = " + soma.soma(Integer.parseInt(x), Integer.parseInt(y)));
+                    System.out.println(x + " " + oper + " " + y + " = " + soma.soma(Double.parseDouble(x), Integer.parseInt(y)));
 
                 break;
                 case "-":
                 break;
                 case "*":
-                    System.out.println(x + " " + oper + " " + y + " = " + mult.mult(Integer.parseInt(x), Integer.parseInt(y)));
+                    System.out.println(x + " " + oper + " " + y + " = " + mult.mult(Double.parseDouble(x), Integer.parseInt(y)));
                 break;
                 case "/":
                     System.out.println(x + " " + oper + " " + y + " = " + div.div(Double.parseDouble(x), Double.parseDouble(y)));
