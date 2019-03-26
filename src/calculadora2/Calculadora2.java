@@ -2,10 +2,11 @@ package calculadora2;
 import java.util.Scanner;
 public class Calculadora2 {
     public static void main(String[] args){
+        Soma soma = new Soma();
         Scanner input = new Scanner(System.in);
         Multiplicacao mult = new Multiplicacao();
-        String x, y;
-        String oper;
+        Divisao div = new Divisao();
+        String x, y, oper;
         System.out.println("10 + 5 Enter!    Insira 0 a qualquer momento para sair");
         do{
             System.out.println("\nCALCULADORA\n");
@@ -20,6 +21,8 @@ public class Calculadora2 {
             }
             switch (oper){
                 case "+":
+                    System.out.println(x + " " + oper + " " + y + " = " + soma.soma(Integer.parseInt(x), Integer.parseInt(y)));
+
                 break;
                 case "-":
                 break;
@@ -27,6 +30,7 @@ public class Calculadora2 {
                    System.out.println(x + " " + oper + " " + y + " = " + mult.mult(Double.parseDouble(x) , Double.parseDouble(y)));
                 break;
                 case "/":
+                    System.out.println(x + " " + oper + " " + y + " = " + div.div(Double.parseDouble(x), Double.parseDouble(y)));
                 break;
                 default:
                 break;

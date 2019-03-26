@@ -21,5 +21,12 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+/Calculadora2/nbproject/private/
+=======
+>>>>>>> f0ac84023c73e4b40131023c174889fb9b7a082b
+>>>>>>> 5883bb498007c13d964a8c9b590a2c3a533b891d
 /nbproject/private/
 /build/
