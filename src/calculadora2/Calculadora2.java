@@ -23,19 +23,18 @@ public class Calculadora2 {
             switch (oper){
                 case "+":
                     System.out.println(x + " " + oper + " " + y + " = " + soma.soma(Double.parseDouble(x), Double.parseDouble(y)));
-
                 break;
                 case "-":
                     System.out.println(x + " " + oper + " " + y + " = " + sub.subtraindo(Double.parseDouble(x), Double.parseDouble(y)));
                 break;
                 case "*":
                     System.out.println(x + " " + oper + " " + y + " = " + mult.mult(Double.parseDouble(x), Double.parseDouble(y)));
-
                 break;
                 case "/":
                     System.out.println(x + " " + oper + " " + y + " = " + div.div(Double.parseDouble(x), Double.parseDouble(y)));
                 break;
                 default:
+                    System.out.println("Operador não reconhecido!");
                 break;
             }
          }while(!x.equals("0"));
