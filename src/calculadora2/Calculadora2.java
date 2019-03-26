@@ -2,6 +2,7 @@ package calculadora2;
 import java.util.Scanner;
 public class Calculadora2 {
     public static void main(String[] args){
+        Soma soma = new Soma();
         Scanner input = new Scanner(System.in);
         String x, y;
         String oper;
@@ -19,6 +20,8 @@ public class Calculadora2 {
             }
             switch (oper){
                 case "+":
+                    System.out.println(x + " " + oper + " " + y + " = " + soma.soma(Integer.parseInt(x), Integer.parseInt(y)));
+
                 break;
                 case "-":
                 break;
