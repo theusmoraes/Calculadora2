@@ -8,17 +8,19 @@ public class Calculadora2 {
         Divisao div = new Divisao();
         Sub sub = new Sub();
         String x, y, oper;
-        System.out.println("10 + 5 Enter!    Insira 0 a qualquer momento para sair");
+        System.out.println("Instruções\nBem vindo à calculadora!\n"
+        + "Escreva com espaço entre os valores:\n<número> <operador> <número> Enter!"
+        + "\nLog: <base> l <logaritmando>\nInsira 0 a qualquer momento para sair");
         do{
             System.out.println("\nCALCULADORA\n");
             x = input.next();
             if(x.equals("0")){
-                break;//Calculadora para se recebe 0
+                break;//Calculadora break o do-while se receber 0
             }
             oper = input.next();
             y = input.next();
             if(y.equals("0")){
-                break;//Calculadora para se recebe 0
+                break;//Calculadora break o do-while se receber 0
             }
             switch (oper){
                 case "+":
@@ -33,6 +35,9 @@ public class Calculadora2 {
                 case "/":
                     System.out.println(x + " " + oper + " " + y + " = " + div.div(Double.parseDouble(x), Double.parseDouble(y)));
                 break;
+                case "l":
+                    System.out.println("Log - Base(" +x+ ") Valor(" +y+ ") = " +Log.log(Double.parseDouble(x), Double.parseDouble(y)));
+                    break;
                 default:
                     System.out.println("Operador não reconhecido!");
                 break;
