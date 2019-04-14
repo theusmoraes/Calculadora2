@@ -10,7 +10,7 @@ public class Calculadora2 {
         String x, y, oper;
         System.out.println("Instruções\nBem vindo à calculadora!\n"
         + "Escreva com espaço entre os valores:\n<número> <operador> <número> Enter!"
-        + "\nLog: <base> l <logaritmando>\nInsira 0 a qualquer momento para sair");
+        + "\nLog: <base> L <logaritmando>\nInsira 0 a qualquer momento para sair");
         do{
             System.out.println("\nCALCULADORA\n");
             x = input.next();
@@ -18,6 +18,7 @@ public class Calculadora2 {
                 break;//Calculadora break o do-while se receber 0
             }
             oper = input.next();
+            oper = oper.toLowerCase();
             y = input.next();
             if(y.equals("0")){
                 break;//Calculadora break o do-while se receber 0
