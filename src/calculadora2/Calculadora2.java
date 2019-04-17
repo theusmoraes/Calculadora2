@@ -21,10 +21,10 @@ public class Calculadora2 {
             oper = oper.toLowerCase();
             if ("v".equals(oper)){
                 System.out.println(x + " " + oper + " = " + Raiz.sqrt(Double.parseDouble(x)));
-                break;
+                
             }
             y = input.next();
-            if(y.equals("0")){
+            if(y.equals("0")&&!"v".equals(oper)){
                 break;//Calculadora break o do-while se receber 0
             }
             switch (oper){
