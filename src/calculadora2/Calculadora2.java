@@ -1,6 +1,19 @@
 package calculadora2;
 import java.util.Scanner;
 public class Calculadora2 {
+    public static String verifyComma(String numero){
+        /*Método que recebe um dos Strings de números, transforma em um array de caracteres, 
+        verifica se existe alguma vírgula nele, se existir ele troca por um ponto, evitando o
+        erro "java.lang.NumberFormatException" e retornando a string correta do número*/
+        char todouble[] = numero.toCharArray();
+            for (int i = 0; i < todouble.length; i++) {
+                if(todouble[i] == ','){
+                    todouble[i] = '.';
+                }
+            }
+            numero = String.valueOf(todouble);
+            return numero;
+    }
     public static void main(String[] args){
         Soma soma = new Soma();
         Scanner input = new Scanner(System.in);
@@ -14,6 +27,7 @@ public class Calculadora2 {
         do{
             System.out.println("\nCALCULADORA\n");
             x = input.next();
+            x = verifyComma(x);
             if(x.equals("0")){
                 break;//Calculadora break o do-while se receber 0
             }
@@ -24,6 +38,7 @@ public class Calculadora2 {
                 break;
             }
             y = input.next();
+            y = verifyComma(y);
             if(y.equals("0")){
                 break;//Calculadora break o do-while se receber 0
             }
