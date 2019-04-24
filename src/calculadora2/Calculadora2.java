@@ -36,7 +36,7 @@ public class Calculadora2 {
         String x, y, oper;
         System.out.println("Instruções\nBem vindo à calculadora!\n"
         + "Escreva com espaço entre os valores:\n<número> <operador> <número> Enter!"
-        + "\nLog: <base> L <logaritmando>\nInsira 0 a qualquer momento para sair");
+        + "\nLog: <base> L <logaritmando>\n Exponencial: <base> ^ <Expoente>\n2Insira 0 a qualquer momento para sair");
         do{
             System.out.println("\nCALCULADORA\n");
             x = input.next();
@@ -78,6 +78,9 @@ public class Calculadora2 {
                 break;
                 case "l":
                     System.out.println("Log - Base(" +x+ ") Valor(" +y+ ") = " +Log.log(Double.parseDouble(x), Double.parseDouble(y)));
+                    break;
+                case "^":
+                    System.out.println(x + " " + oper + " " + y + " = " + Exponencial.Pow(Double.parseDouble(x), Double.parseDouble(y)));
                     break;
                 default:
                     System.out.println("Operador não reconhecido!");
